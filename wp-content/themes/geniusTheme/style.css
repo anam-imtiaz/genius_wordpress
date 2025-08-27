@@ -1,0 +1,643 @@
+/*
+Theme Name: Genius Theme
+Theme URI: https://wordpress.org/themes/twentytwentythree
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself.
+Requires at least: 6.1
+Tested up to: 6.8
+Requires PHP: 5.6
+Version: 1.6
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+Text Domain: twentytwentythree
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, 
+rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, 
+blog, portfolio, news
+*/
+
+@font-face {
+    font-family: 'SFProText'; /* Choose a name to refer to this font */
+    src: url('./assets/fonts/SF-Pro-Text-Regular.otf') format('woff2'),
+         url('./assets/fonts/SF-Pro-Text-Regular.otf') format('woff');
+    /* Add more src declarations for different formats for broader browser support */
+    font-weight: normal; /* Optional: Define font weight if applicable */
+    font-style: normal; /* Optional: Define font style (e.g., italic) if applicable */
+  }
+  
+
+  
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #fff;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'SFProText';
+    background-image: url('./assets/images/fullbg.png');
+}
+.let-us-prove-container{
+    position: relative;
+    font-size: 31px;
+    line-height: 46px;
+    display: inline-block;
+    font-family: 'SFProText';
+    text-align: center;
+    color: #fff;
+    margin-top: -125px;
+    font-weight: bold;
+}
+.logo_dir{
+    float: right;
+    margin-right: 99px;
+}
+.span {
+    color: #1d1d1f;
+    }
+    .you {
+    color: #58b2d8;
+    }
+    .godson_eddy{
+        z-index: 99999;
+        margin-top: 123px;
+        
+       
+    }
+    .godson_eddy:hover{
+      /*  background: #FFFF;
+        background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 50%); */
+    }
+    .godson_eddy span{
+        font-size: 16px;
+        line-height: 22px;
+        display: inline-block;
+        font-family: 'SFProText';
+        text-align: center;
+        color: #fff;
+        margin-top: 25px;
+        position: relative;
+        top: -8px;
+        left: 46px;       
+    }
+    .strachar{
+        position: relative;
+        margin-top: 125px;
+        top: -91px;
+        left: -125px;
+        text-align: center;
+    }
+    .strachar span{
+        font-size: 18px;
+        line-height: 22px;
+        display: inline-block;
+        font-family: 'SFProText';
+        color: #fff;
+        position: relative;
+        top: -3px;
+        left: 25px;  
+           
+    }
+
+   .creator{
+        font-size: 14px !important; 
+        line-height: 22px;
+        display: inline-block;
+        font-family: 'SFProText';
+        text-align: center;
+        color: #d0cce9 !important;
+        position: relative;
+                
+    }
+    .video-container{
+        width: 130%;
+        height: 75%;
+        border-radius: 11px;
+        margin-left: -129px;
+        margin-top: 22px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid #000;
+        background: #000;
+    }
+  
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+        font-size: 15px;
+        line-height: 16px;
+        margin-top: -45px;
+        width: 14rem;
+        text-align: center;
+        margin: 9px;
+        border-radius: 11px;
+        border: 1px solid #0F1163;
+        background: rgba(1, 1, 23, 0.60);
+        box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+        padding: 8px 11px;
+        height: 14rem;
+    }
+    .widget_container:first-child:before {
+        content:'';
+        position:absolute;
+        width:100%;
+        height:30px;
+        background:#6bd9ff(90deg, rgba(35, 37, 104, 0.30) 0%, #070EF4 50%, rgba(35, 37, 104, 0.30) 100%);;
+        top:-30px;
+        left:0;
+    }
+    .widget_container img{
+      /*  width: 8rem;
+        height: 8rem;*/
+    }
+   
+    .widget_container p{
+            font-family: 'SFProText';
+            text-align: left;
+            display: inline-block;
+            color: #fff;
+            margin-top: 25px;
+            /* line-height: 16px; */
+            padding: 0px 12px 0px 12px;
+            font-size: 13px;
+        
+    }
+  .grid_container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 11px;
+    background-color: rgba(1, 1, 23, 0.8);
+    border: 1px solid #0f1163;
+    background-repeat: repeat;
+    box-sizing: border-box;
+    width: 222px;
+    height: 227px;
+
+  }
+  .watch_now{
+    
+    background-color: #fcde68;
+    border-radius: 55px;
+    padding: 6px 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.watch_now p {
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    position: relative;
+    top: 10px;
+}
+
+.watch_now span{
+    font-weight: normal;
+    font-size:12px;
+    margin-left:8px;
+}
+.watch_now img{
+  float:left  
+}
+
+.claim_book{
+    float: right;
+    background-color:#68D8FC !important;
+    border-radius: 55px;
+    padding: 6px 35px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.claim_book p {
+    float: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 15px;
+    position: relative;
+    top: 10px;
+}
+
+.testimonials_icon{
+   position: relative;
+   top: -5px;
+}
+.elite_icon{
+   position: relative;
+   top: 8px;
+   
+}
+.unlock_icon{
+   position: relative;
+   top: 7px;
+
+}
+.genius_icon{
+   position: relative;
+   top: 10px;
+   left: 7px;
+ 
+
+}
+.claim_book span{
+    font-weight: normal;
+    font-size:12px;
+    margin-left:5px;
+}
+.claim_book img{
+  float:left  
+}
+  .reading-genius-home-var1-1-item{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #0b0b31;
+    width: 1900px;
+    height: 1024px;
+}
+.grid-lines-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2097px;
+    height: 1461px;
+    opacity: 0.3;
+}
+.reading-genius-home-var1-1-inner {
+    position: absolute;
+    top: 9.32px;
+    left: 535.96px;
+    filter: blur(180px);
+    border-radius: 50%;
+    background: linear-gradient(197.22deg, rgba(43, 47, 201, 0.6), rgba(110, 83, 174, 0.5));
+    width: 896.5px;
+    height: 812.8px;
+    transform:  rotate(8.6deg);
+    transform-origin: 0 0;
+    opacity: 0.8;
+}
+.rectangle-div {
+    position: absolute;
+    top: 637px;
+    left: 230px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 11px;
+    background-color: rgba(1, 1, 23, 0.6);
+    border: 1px solid #0f1163;
+    box-sizing: border-box;
+    width: 251px;
+    height: 227px;
+}
+.line-div {
+    position: absolute;
+    top: 637.5px;
+    left: 299.5px;
+    border-top: 1px solid rgba(35, 37, 104, 0.3);
+    box-sizing: border-box;
+    width: 157px;
+    height: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+    .swiper-slide {
+        width: 139px !important;
+        height: 200px !important;
+    }
+    body {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+      }
+      .creator {
+        font-size: 8px !important;
+      }
+      .strachar span {
+        font-size: 18px;
+        line-height: 22px;
+        display: inline-block;
+        font-family: 'SFProText';
+        color: #fff;
+        position: relative;
+        top: -3px;
+        left: 53px;
+      }
+    .testimonials_icon {
+        position: relative;
+        top: -2px ;
+      }
+      .elite_icon {
+        position: relative;
+        top: 0px;
+      }
+    .let-us-prove-container {
+        font-size: 29px !important;
+        line-height: 37px !important;
+        margin-top: 25px;
+    }
+  .godson_eddy {
+    z-index: 99999;
+    margin-top: 123px;
+    position: relative;
+    left: 24px;
+    }
+
+  .strachar {
+    position: relative;
+    margin-top: 125px;
+    top: -91px;
+    left: -12px;
+    text-align: center;
+}
+.video-container {
+    width: 178%;
+    height: 250%;
+    border-radius: 11px;
+    margin-left: 24px;
+    margin-top: 0px;
+    z-index: 9999;
+    position: relative;
+    z-index: 999999;
+    top: -217px;
+}
+.claim_book {
+    float: none !important;
+    background-color: #036fe2;
+    border-radius: 55px;
+    padding: 6px 35px;
+    width: 100%;
+    margin-top: 15px;
+}
+.watch_now
+ {
+    float: none !important;
+    background-color: #fcde68;
+    border-radius: 55px;
+    padding:6px 26px;
+    width: 100%;
+    margin-top: 0px;
+}
+.swiper
+
+ {
+    width: 800px;
+    height: 197px;
+    margin-top: 13px;
+}
+.swiper2
+ {
+    width: 800px;
+    height: 197px;
+    margin-top: 13px;
+}
+.watch_now img {
+    float: left;
+    margin-left: 16px;
+  }
+.widget_container {
+    position: relative;
+    position: relative;
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 9rem;
+    text-align: center;
+    margin: 6px;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+  }
+  .widget_container p{
+    font-size: 12px;
+   
+  }
+  .claim_book img {
+    float: left;
+    margin-left: 25px;
+  }
+  .claim_book p{
+    font-size: 17px;
+  }
+  .genius_icon {
+    position: relative;
+    top: 8px !important;
+    left: 16px !important;
+
+  }
+  .unlock_icon {
+    position: relative;
+    left: -5px;
+ }
+}
+
+
+/* (320x480) iPhone (Original, 3G, 3GS) */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 10rem !important;
+    text-align: center;
+    margin: 6px;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+    .genius_icon {
+        position: relative;
+        top: 38px;
+        left: 6px;
+    }
+    .claim_book {
+        padding: 0px 11px !important;
+
+    }
+    .watch_now {
+        padding: 6px 0px !important;
+    }
+
+}
+ 
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+    /* insert styles here */
+}
+ 
+/* (320x480) Smartphone, Landscape */
+@media only screen and (device-width: 480px) and (orientation: landscape) {
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 10rem;
+    text-align: center;
+    margin: 6px;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+    .genius_icon {
+        position: relative;
+        top: 38px;
+        left: 6px;
+    }
+}
+ 
+/* (480x800) Android */
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) {
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 10rem;
+    text-align: center;
+    margin: 6px;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+    .genius_icon {
+        position: relative;
+        top: 38px;
+        left: 6px;
+    }
+}
+ 
+/* (640x960) iPhone 4 & 4S */
+@media only screen and (min-device-width: 640px) and (max-device-width: 960px) {
+    /* insert styles here */
+}
+ 
+/* (720x1280) Galaxy Nexus, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    /* insert styles here */
+}
+ 
+/* (720x1280) Galaxy Nexus, Landscape */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: landscape) {
+    /* insert styles here */
+}
+ 
+/* (1024x768) iPad 1 & 2, XGA */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* insert styles here */
+}
+ 
+/* (768x1024) iPad 1 & 2, Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* insert styles here */
+}
+ 
+/* (1024x768) iPad 1 & 2, Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* insert styles here */
+}
+ 
+/* (2048x1536) iPad 3 */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) {
+    /* insert styles here */
+}
+ 
+/* (1280x720) Galaxy Note 2, WXGA */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) {
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 10rem !important;
+    text-align: center;
+    margin: 5px !important;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+    .genius_icon {
+        position: relative;
+        top: 65px !important;
+        left: -87px !important;
+    }
+    .unlock_icon {
+        position: relative;
+        top: 12px !important;
+        left: -27px !important;
+    }
+    .claim_book {
+        padding: 6px 17px !important;
+    }
+    .watch_now {
+        padding: 6px 6px !important;
+    }
+    .video-container {
+        margin-left: -103px !important;
+    }
+}
+ 
+/* (1366x768) WXGA Display */
+@media  screen and (max-width: 1366px) {
+   
+}
+ 
+/* (1280x1024) SXGA Display */
+@media  screen and (max-width: 1280px) {
+    
+}
+ 
+/* (1440x900) WXGA+ Display */
+@media  screen and (max-width: 1440px) {
+    .widget_container{
+        position: relative;
+        /* position: relative; */
+    font-size: 15px;
+    line-height: 16px;
+    margin-top: -45px;
+    width: 12rem;
+    text-align: center;
+    margin: 6px;
+    border-radius: 11px;
+    border: 1px solid #0F1163;
+    background: rgba(1, 1, 23, 0.60);
+    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.08);
+    }
+    .genius_icon {
+        position: relative;
+        top: 14px;
+        left: 16px;
+    }
+}
+ 
+/* (1680x1050) WSXGA+ Display */
+@media  screen and (max-width: 1680px) {
+    /* insert styles here */
+}
+ 
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+    /* insert styles here */
+}
+ 
+/* (1600x900) HD+ Display */
+@media  screen and (max-width: 1600px) {
+    /* insert styles here */
+}
